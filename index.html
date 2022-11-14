@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>freeCodeCamp Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking time to help us improve the platform</p>
+  <form action="" id="survey-form">
+  <div id="form-bg">
+    <fieldset>
+      <div id="form-group"> <!-- Name -->
+        <label id="name-label" for="name">Name </label>
+        <input id="name" type="text" placeholder="Enter your name here" required />
+      </div>
+      <div id="form-group"> <!-- Email -->
+        <label id="email-label" for="email">Email </label>
+        <input id="email" type="email" placeholder="Enter your email here" required />
+      </div>
+      <div id="form-group"> <!-- Age -->
+        <label id="number-label" for="number">Age<span class="clue"> (optional)</span> </label>
+        <input id="number" type="number" placeholder="Age" min="10" max="120"/>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div id="form-group"> <!-- Role Select -->
+        <label for="dropdown-role">Which option best describes your current role?</label>
+        <select id="dropdown-role">
+          <option value="" selected disabled hidden>Select current role...</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="4">Other</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div id="form-group"> <!-- User Recommend -->
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+            <label><input id="definitely" name="user-recommend" value="definitely" type="radio" class="input-radio">Definitely</label>
+            <label><input id="maybe" name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+            <label><input id="not-sure" name="user-recommend" value="not-sure" type="radio" class="input-radio">Not Sure</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div id="form-group"> <!-- Feature Select -->
+        <label for="dropdown-feature">What is your favorite feature of freeCodeCamp?</label>
+        <select id="dropdown-feature">
+          <option value="" selected disabled hidden>Select an option...</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div id="form-group"> <!-- User Improvement --> 
+        <p>What would you like to see improved?</p>
+        <label><input id="front-end" name="user-improve" value="improv1" type="checkbox" class="input-checkbox">Front-end Projects</label>
+        <label><input id="back-end" name="user-improve" value="improv2" type="checkbox" class="input-checkbox">Back-end Projects</label>
+        <label><input id="data-vis" name="user-improve" value="improv3" type="checkbox" class="input-checkbox">Data Visualization</label>
+        <label><input id="challenges" name="user-improve" value="improv4" type="checkbox" class="input-checkbox">Challenges</label>
+        <label><input id="open-source" name="user-improve" value="improv5" type="checkbox" class="input-checkbox">Open Source Community</label>
+        <label><input id="gitter" name="user-improve" value="improv6" type="checkbox" class="input-checkbox">Gitter Help Rooms</label>
+        <label><input id="videos" name="user-improve" value="improv7" type="checkbox" class="input-checkbox">Videos</label>
+        <label><input id="city-meet" name="user-improve" value="improv8" type="checkbox" class="input-checkbox">City Meetups</label>
+        <label><input id="wiki" name="user-improve" value="improv9" type="checkbox" class="input-checkbox">Wiki</label>
+        <label><input id="forum" name="user-improve" value="improv10" type="checkbox" class="input-checkbox">Forum</label>
+        <label><input id="add-course" name="user-improve" value="improv11" type="checkbox" class="input-checkbox">Additional Courses</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div id="form-group">  <!-- Comments or Suggestions -->
+        <p>Any comments or suggestions?</p>
+        <textarea id="user-text" name="user-text" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </fieldset>
+    <div class="div-submit">
+      <input id="submit" type="submit" value="Submit">
+    </div>
+  </div>
+  </form>
+
+</body>
+</html>
